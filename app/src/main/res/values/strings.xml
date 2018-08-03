@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Ride Atlanta</string>
+    <string name="image_of_the_associated_listing">Image of the associated listing</string>
+    <string name="sample_name">Sample Bike Shop</string>
+    <string name="sample_address">123 Main St. Atlanta, GA 30303</string>
+    <string name="sample_website">http://bikeshop.com</string>
 </resources>
