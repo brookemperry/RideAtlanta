@@ -16,20 +16,20 @@ public class Bike {
     private int mImageId = NO_IMAGE_PROVIDED;
     private static final int NO_IMAGE_PROVIDED = 0;
 
-   public Bike(String name, String address, String website){
-       mName = name;
-       mAddress = address;
-       mWebsite = website;
-   }
+    public Bike(String name, String address, String website) {
+        mName = name;
+        mAddress = address;
+        mWebsite = website;
+    }
 
-   public Bike(String name, String address, String website, int imageId){
-       mName = name;
-       mAddress = address;
-       mWebsite = website;
-       mImageId = imageId;
-   }
+    public Bike(String name, String address, String website, int imageId) {
+        mName = name;
+        mAddress = address;
+        mWebsite = website;
+        mImageId = imageId;
+    }
 
-   //get name of location or group
+    //get name of location or group
     public String getmName() {
         return mName;
     }
@@ -50,7 +50,7 @@ public class Bike {
     }
 
     //Returns whether there is an image or not associated with location or group
-    public boolean hasImage(){
-       return mImageId !=NO_IMAGE_PROVIDED;
+    public boolean hasImage() {
+        return mImageId != NO_IMAGE_PROVIDED;
     }
 }

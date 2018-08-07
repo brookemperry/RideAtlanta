@@ -12,7 +12,7 @@ import android.widget.ListView;
 import java.util.ArrayList;
 
 public class TrailsFragment extends android.support.v4.app.Fragment {
-    public TrailsFragment(){
+    public TrailsFragment() {
         //constructor intentionally empty
     }
 
@@ -24,7 +24,7 @@ public class TrailsFragment extends android.support.v4.app.Fragment {
 
         //List of Cycling trails
         final ArrayList<Bike> bike = new ArrayList<>();
-        bike.add(new Bike ("Northside Trail", "Northside Beltline Trail, Atlanta, GA 30318", "https://beltline.org/trails/northside-trail/", R.drawable.alvan_nee_unsplash));
+        bike.add(new Bike("Northside Trail", "Northside Beltline Trail, Atlanta, GA 30318", "https://beltline.org/trails/northside-trail/", R.drawable.alvan_nee_unsplash));
         bike.add(new Bike("Freedom Park", "Moreland Ave NE & North Avenue NE, Atlanta, GA 30308", "http://www.freedompark.org/fpc/", R.drawable.flo_karr_unsplash));
         bike.add(new Bike("Silver Comet Trail", "Silver Comet Trail, Smyrna, GA 30082", "http://www.silvercometga.com", R.drawable.rikki_chan_unsplash));
         bike.add(new Bike("Piedmont Park At Eastside BeltLine Trail Hub", "10th St NE, Atlanta, GA 30306", "https://beltline.org/explore-atlanta-beltline-trails/eastside-trail/", R.drawable.riley_harrison_unsplash));

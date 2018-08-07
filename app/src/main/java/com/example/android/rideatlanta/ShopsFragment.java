@@ -12,7 +12,7 @@ import android.widget.ListView;
 import java.util.ArrayList;
 
 public class ShopsFragment extends android.support.v4.app.Fragment {
-    public ShopsFragment(){
+    public ShopsFragment() {
         //constructor intentionally empty
     }
 
@@ -24,7 +24,7 @@ public class ShopsFragment extends android.support.v4.app.Fragment {
 
         //List of Bike shops
         final ArrayList<Bike> bike = new ArrayList<>();
-        bike.add(new Bike ("Atlanta Cycling – Vinings", "4335 Cobb Pkwy SE, Smyrna, GA 30339", "http://www.atlantacycling.com/\n"));
+        bike.add(new Bike("Atlanta Cycling – Vinings", "4335 Cobb Pkwy SE, Smyrna, GA 30339", "http://www.atlantacycling.com/\n"));
         bike.add(new Bike("Atlanta Bicycle Barn", "151 Sampson St NE, Atlanta, GA 30312", "http://atlbikebarn.com/"));
         bike.add(new Bike("Intown Bicycles", "1035 Monroe Dr NE, Atlanta, GA 30306", "http://www.intownbicycles.com/"));
         bike.add(new Bike("Atlanta Pro Bikes", "1039 North Highland Avenue Northeast, Atlanta, GA 30306", "https://www.atlantaprobikes.com/"));

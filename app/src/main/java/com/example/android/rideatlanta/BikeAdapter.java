@@ -13,7 +13,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 public class BikeAdapter extends ArrayAdapter {
-    public BikeAdapter(Activity context, ArrayList<Bike> bike){
+    public BikeAdapter(Activity context, ArrayList<Bike> bike) {
         super(context, 0, bike);
     }
 
@@ -22,7 +22,7 @@ public class BikeAdapter extends ArrayAdapter {
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
         //Check if the existing view is being reused if not inflate the view
         View listItemView = convertView;
-        if (listItemView == null){
+        if (listItemView == null) {
             listItemView = LayoutInflater.from(getContext()).inflate(
                     R.layout.item, parent, false);
         }
@@ -45,11 +45,10 @@ public class BikeAdapter extends ArrayAdapter {
         ImageView imageId = listItemView.findViewById(R.id.image_view);
 
         //make ImageView visible if currentBike has an image id associated with it
-        if (currentBike.hasImage()){
+        if (currentBike.hasImage()) {
             imageId.setImageResource(currentBike.getmImageId());
             imageId.setVisibility(View.VISIBLE);
-        }
-        else imageId.setVisibility(View.GONE);
+        } else imageId.setVisibility(View.GONE);
         return listItemView;
     }
 }

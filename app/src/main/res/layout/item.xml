@@ -3,41 +3,46 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorListBackground"
     android:orientation="horizontal">
 
     <ImageView
+        android:id="@+id/image_view"
         android:layout_width="@dimen/image_view"
         android:layout_height="@dimen/image_view"
-        android:id="@+id/image_view"
+        android:contentDescription="@string/image_of_the_associated_listing"
         android:paddingLeft="@dimen/item_side_space"
         android:paddingStart="@dimen/item_side_space"
-        android:contentDescription="@string/image_of_the_associated_listing"
-        android:src="@mipmap/ic_launcher"/>
+        android:src="@mipmap/ic_launcher" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="@dimen/listing_item_height"
+        android:gravity="center_vertical"
         android:orientation="vertical"
         android:paddingLeft="@dimen/item_side_space"
-        android:paddingStart="@dimen/item_side_space"
-        android:gravity="center_vertical">
+        android:paddingStart="@dimen/item_side_space">
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             android:id="@+id/name_text_view"
-            tools:text="@string/sample_name"/>
-
-        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="@color/colorBodyText"
+            tools:text="@string/sample_name" />
+
+        <TextView
             android:id="@+id/address_text_view"
-            tools:text="@string/sample_address"/>
-
-        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="@color/colorBodyText"
+            tools:text="@string/sample_address" />
+
+        <TextView
             android:id="@+id/website_text_view"
-            tools:text="@string/sample_website"/>
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBodyText"
+            tools:text="@string/sample_website" />
     </LinearLayout>
 
 </LinearLayout>
