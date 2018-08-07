@@ -20,7 +20,7 @@ public class CategoryFragmentPagerAdapter extends FragmentPagerAdapter {
         else if (position == 2){
             return new ClubsFragment();
         }
-        else return new GroupRidesFragment();
+        else return new AdvocacyServiceFragment();
     }
 
     @Override
@@ -40,6 +40,6 @@ public class CategoryFragmentPagerAdapter extends FragmentPagerAdapter {
         else if (position == 2){
             return "CLUBS";
         }
-        else return "GROUP RIDES";
+        else return "ADVOCACY & SERVICE";
     }
 }

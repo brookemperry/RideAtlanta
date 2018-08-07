@@ -29,24 +29,27 @@ public class BikeAdapter extends ArrayAdapter {
         //Get the Bike object located at this position
         Bike currentBike = (Bike) getItem(position);
 
-        //Find the TextView in list.xml layout for name
-        TextView nameTextView = listItemView.findViewById(R.id.name_text_view);
+        //Find the TextView in list.xml layout for name and set the text on the correct textview
+        TextView name = listItemView.findViewById(R.id.name_text_view);
+        name.setText(currentBike.getmName());
 
-        //Find the TextView in list.xml for address
-        TextView addressTextView = listItemView.findViewById(R.id.address_text_view);
+        //Find the TextView in list.xml for address and set the text on the correct textview
+        TextView address = listItemView.findViewById(R.id.address_text_view);
+        address.setText(currentBike.getmAddress());
 
-        //Find the TextView in list.xml for the website
-        TextView websiteTextView = listItemView.findViewById(R.id.website_text_view);
+        //Find the TextView in list.xml for the website and set the text on the correct textview
+        TextView website = listItemView.findViewById(R.id.website_text_view);
+        website.setText(currentBike.getmWebsite());
 
-        //Find the ImageView in list.xml
-        ImageView imageView = listItemView.findViewById(R.id.image_view);
+        //Find the ImageView in list.xml and
+        ImageView imageId = listItemView.findViewById(R.id.image_view);
 
         //make ImageView visible if currentBike has an image id associated with it
         if (currentBike.hasImage()){
-            imageView.setImageResource(currentBike.getmImageId());
-            imageView.setVisibility(View.VISIBLE);
+            imageId.setImageResource(currentBike.getmImageId());
+            imageId.setVisibility(View.VISIBLE);
         }
-        else imageView.setVisibility(View.GONE);
+        else imageId.setVisibility(View.GONE);
         return listItemView;
     }
 }

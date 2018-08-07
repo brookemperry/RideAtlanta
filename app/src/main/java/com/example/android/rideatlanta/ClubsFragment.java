@@ -30,12 +30,11 @@ public class ClubsFragment extends android.support.v4.app.Fragment {
     bike.add(new Bike("Ladies on Spokes", "PO Box 1752 Senoia, GA 30276", "http://www.ladiesonspokes.com/"));
     bike.add(new Bike("Southern Bicycling League", "1401 Sanden Ferry Drive, Decatur, Georgia, 30033", "http://bikesbl.org/"));
     bike.add(new Bike("Dunwoody Cycling", "1832 Independence Sq, Suite C,  Dunwoody, GA 30338", "http://www.dunwoodycycling.com/"));
-    bike.add(new Bike("Atlanta Bicycle Coalition", "889 Wylie St SE, Atlanta, GA 30316", "http://www.atlantabike.org/"));
 
-    //Create an{@link WordAdapter, whose data source is a list of {@link Bike} entries
+    //Create an{@link WordAdapter}, whose data source is a list of {@link Bike} entries
     BikeAdapter adapter = new BikeAdapter(getActivity(), bike);
 
-        ListView listView =rootView.findViewById(R.id.list);
+        ListView listView = rootView.findViewById(R.id.list);
         listView.setAdapter(adapter);
 
         return rootView;
